@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jonas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Fragment+Mono&display=swap">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div id="app">
+
+<header id="site-header">
+  <div class="bar-row">
+    <a href="#top" class="brand" data-r="fade">Jonas<span id="idx-label" class="mono">00 / 04</span></a>
+    <nav aria-label="Sections">
+      <a href="#about" class="nav-link" data-sec="1">About</a>
+      <a href="#work" class="nav-link" data-sec="2">Work</a>
+      <a href="#skills" class="nav-link" data-sec="3">Skills</a>
+      <a href="#contact" class="nav-link" data-sec="4">Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Switch to dark mode">
+      <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+        <circle cx="7" cy="7" r="6" fill="none" stroke="currentColor" stroke-width="1.2"></circle>
+        <path d="M7 1a6 6 0 0 1 0 12z" fill="currentColor"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="progress-track" aria-hidden="true"><div id="progress-bar"></div></div>
+</header>
+
+<main id="top">
+
+<section data-sec="0" style="padding-top:clamp(80px,12cqi,168px)">
+  <div class="badge" data-r="slide" data-d="200">
+    <span class="pulse-wrap"><span id="pulse-dot"></span><span class="pulse-dot-static"></span></span>
+    Available for freelance work
+  </div>
+  <h1 class="hero-h1">
+    <span class="mask-line"><span data-r="mask" data-d="300">Jonas is a developer</span></span>
+    <span class="mask-line"><span data-r="mask" data-d="380">working on</span></span>
+    <span class="mask-line rot-line" aria-label="web applications, databases, industrial automation">
+      <span data-r="mask" data-d="460">
+        <span id="rotator">
+          <span>web applications.</span>
+          <span>databases.</span>
+          <span>industrial automation.</span>
+          <span>web applications.</span>
+        </span>
+      </span>
+    </span>
+  </h1>
+  <p class="hero-p" data-r="fade" data-d="700">Elektronica-ICT student in Belgium, freelancing in web and databases as a developer for Technoguide. and as a developer coordinator for Smartschool++.</p>
+  <div class="hero-links" data-r="fade" data-d="820">
+    <a class="link-underline" href="https://github.com/jonasvo20-ux">GitHub <span class="mono">↗</span></a>
+    <a class="link-underline" href="mailto:jonasvo2009@icloud.com">jonasvo2009@icloud.com <span class="mono">→</span></a>
+  </div>
+</section>
+
+<section id="about" data-sec="1" class="row-section">
+  <div class="section-index" data-r="slide"><span class="idx-no">01</span><span class="idx-name">About</span></div>
+  <div class="section-body">
+    <h2><span class="mask-line"><span data-r="mask">Student by day, freelancer by the rest of it.</span></span></h2>
+    <p data-r="fade" data-d="120">I study Elektronica-ICT and am heading to university for informatics. As Technoguide I build websites and the databases behind them. The rest of my time goes to industrial automation: Siemens PLCs, OPC UA, SCADA, and leaving the networks they sit on a little less open than I found them.</p>
+  </div>
+</section>
+
+<section id="work" data-sec="2" class="row-section">
+  <div class="section-index" data-r="slide"><span class="idx-no">02</span><span class="idx-name">Work</span></div>
+  <div class="section-body" id="work-list-wrap">
+    <div class="hr-anim" data-r="rule"></div>
+    <ol id="work-list">
+      <li>
+        <a href="https://github.com/jonasvo20-ux" class="work-row" data-cta="View source →">
+          <span class="work-name" data-r="row" data-d="0"><span class="mono no">01</span><span class="name">PLC Network Scanner</span></span>
+          <span class="work-desc" data-r="row" data-d="60">Python GUI tool that discovers PLCs on a network.</span>
+          <span class="work-meta" data-r="row" data-d="60"><span class="mono">Python · OT</span><span class="mono year">2025</span><span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <div class="hr-anim" data-r="rule" data-d="0"></div>
+      </li>
+      <li>
+        <a href="https://github.com/jonasvo20-ux" class="work-row" data-cta="View source →">
+          <span class="work-name" data-r="row" data-d="80"><span class="mono no">02</span><span class="name">Smartschool++</span></span>
+          <span class="work-desc" data-r="row" data-d="140">Open-source Chrome extension contributions.</span>
+          <span class="work-meta" data-r="row" data-d="140"><span class="mono">TS · Extension</span><span class="mono year">2024</span><span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <div class="hr-anim" data-r="rule" data-d="80"></div>
+      </li>
+      <li>
+        <a href="#" class="work-row" data-cta="Visit site →">
+          <span class="work-name" data-r="row" data-d="160"><span class="mono no">03</span><span class="name">Reniver</span></span>
+          <span class="work-desc" data-r="row" data-d="220">Past experience. Role and what I worked on.</span>
+          <span class="work-meta" data-r="row" data-d="220"><span class="mono">Experience</span><span class="mono year">[YEAR]</span><span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <div class="hr-anim" data-r="rule" data-d="160"></div>
+      </li>
+      <li>
+        <a href="#" class="work-row" data-cta="Read notes →">
+          <span class="work-name" data-r="row" data-d="240"><span class="mono no">04</span><span class="name">Homelab</span></span>
+          <span class="work-desc" data-r="row" data-d="300">Self-hosted services on a Siemens industrial PC. Rated for a factory floor, installed in a closet.</span>
+          <span class="work-meta" data-r="row" data-d="300"><span class="mono">Linux · IPC</span><span class="mono year">Ongoing</span><span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+        <div class="hr-anim" data-r="rule" data-d="240"></div>
+      </li>
+    </ol>
+    <div id="cursor-tip" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<section id="skills" data-sec="3" class="row-section">
+  <div class="section-index" data-r="slide"><span class="idx-no">03</span><span class="idx-name">Skills</span></div>
+  <div class="section-body skills-grid">
+    <div class="skill-group">
+      <div class="skill-head" data-r="fade" data-d="0"><span class="name">Web</span><span class="mono">-W1</span></div>
+      <div class="hr-anim" data-r="rule" data-d="0"></div>
+      <ul>
+        <li data-r="row" data-d="120">TypeScript</li>
+        <li data-r="row" data-d="170">Next.js</li>
+        <li data-r="row" data-d="220">PHP</li>
+        <li data-r="row" data-d="270">WordPress</li>
+        <li data-r="row" data-d="320">HTML &amp; CSS</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <div class="skill-head" data-r="fade" data-d="90"><span class="name">Data</span><span class="mono">-D2</span></div>
+      <div class="hr-anim" data-r="rule" data-d="90"></div>
+      <ul>
+        <li data-r="row" data-d="210">Python</li>
+        <li data-r="row" data-d="260">PostgreSQL</li>
+        <li data-r="row" data-d="310">MySQL</li>
+        <li data-r="row" data-d="360">Data modelling</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <div class="skill-head" data-r="fade" data-d="180"><span class="name">Industrial</span><span class="mono">-K3</span></div>
+      <div class="hr-anim" data-r="rule" data-d="180"></div>
+      <ul>
+        <li data-r="row" data-d="300">Siemens TIA Portal</li>
+        <li data-r="row" data-d="350">SCL</li>
+        <li data-r="row" data-d="400">OPC UA</li>
+        <li data-r="row" data-d="450">SCADA / ICS</li>
+        <li data-r="row" data-d="500">Network security</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" data-sec="4" class="row-section" style="padding-bottom:clamp(96px,11cqi,152px)">
+  <div class="section-index" data-r="slide"><span class="idx-no">04</span><span class="idx-name">Contact</span></div>
+  <div class="section-body">
+    <h2 style="margin-bottom:14px"><span class="mask-line"><span data-r="mask">Have something that needs building?</span></span></h2>
+    <p data-r="fade" data-d="100">A website, a database, or a PLC that stopped answering. Replies within a working day.</p>
+    <div class="contact-actions" data-r="fade" data-d="200">
+      <a id="cta-email" class="btn-cta" href="mailto:jonasvo2009@icloud.com">jonasvo2009@icloud.com<span class="mono cta-arrow" aria-hidden="true">→</span></a>
+      <button id="copy-btn" type="button">
+        <span class="copy-window"><span id="copy-inner"><span>Copy address</span><span class="copied">Copied ✓</span></span></span>
+      </button>
+      <a class="link-underline" href="https://github.com/jonasvo20-ux">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="hr-anim" data-r="rule"></div>
+  <div class="footer-row mono">
+    <span>© 2026 Jonas</span>
+    <span class="clock">Belgium <span class="clock-text"><span id="clock-hh">--</span><span id="clock-colon">:</span><span id="clock-mm">--</span></span> <span id="clock-tz"></span></span>
+    <span>"my code may run like shit, but it works."</span>
+    <a href="#top" class="footer-top">Back to top ↑</a>
+  </div>
+</footer>
+
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
